@@ -13,13 +13,14 @@
         }
 
         .container {
-            max-width: calc(100% - 100px);
-            margin: 50px auto;
+            max-width: calc(100% - 20px); /* Adjusted margin for smaller screens */
+            margin: 10px auto; /* Adjusted margin for smaller screens */
             overflow: hidden;
         }
 
         .image-container {
             display: flex;
+            flex-direction: row; /* Default direction */
             align-items: center;
             justify-content: space-between;
             margin-bottom: 20px;
@@ -49,20 +50,38 @@
         @media screen and (max-width: 600px) {
             .image-container {
                 flex-direction: column;
+                text-align: center; /* Center text on smaller screens */
             }
 
             .image-container img {
-                max-width: 100%;
+                max-width: 100%; /* Adjusted to 100% of the container width */
                 margin: 0;
-                margin-bottom: 20px;
+                margin-bottom: 10px; /* Reduced margin for smaller screens */
             }
 
             .text-container {
-                max-width: 100%;
+                max-width: 100%; /* Adjusted to 100% of the container width */
                 margin: 0;
             }
+
+            .text-container.left {
+                order: initial; /* Reset the order property */
+                margin: 0;
+            }
+
+            .title-bar {
+                font-size: 1.2em;
+            }
+
+            .more-about-me-bar {
+                font-size: 0.8em;
+            }
+
+            .white-border {
+                border-bottom: 10px solid #f0f0f0; /* Reduced border size */
+            }
         }
-              /* New styles for the title bar with light orange color */
+
         .title-bar {
             background-color: #f1e291; /* Light Orange color */
             padding: 5px;
@@ -71,21 +90,19 @@
             font-size: 1.5em;
         }
 
-        /* New styles for the "more about me" bar */
         .more-about-me-bar {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 5px;
-            border-bottom: 10px #ffffff;
+            border-bottom: 10px solid #ffffff;
         }
 
-        /* Style the link in the "more about me" bar */
         .more-about-me-bar a {
             color: white;
             text-decoration: none;
-        
         }
+
         .white-border {
             border-bottom: 20px solid #f0f0f0;
         }
@@ -97,7 +114,7 @@
     </div>
 
     <div class="more-about-me-bar">
-        <a>----------------|| Manish Kumar Veliboina ||----------------</a>
+        <a href="D:\porto\index.html">----------------|| More about me ||----------------</a>
     </div>
     <div class="white-border"></div>
 
@@ -109,11 +126,11 @@
                  Here is the link for the model to look in -  
                <a href=https://a360.co/49yskBd target="_blank"> 3D view </a>.
             </div>
-            <img src="pictures\Screenshot 2024-03-03 153406.png" alt="AARM'S COOKING">
+            <img src="D:\porto\pictures\Screenshot 2024-03-03 153406.png" alt="AARM'S COOKING">
         </div>
     
     <div class="image-container">
-        <img src="pictures\Screenshot 2024-03-01 214045.png" alt="Hexapod">
+        <img src="D:\porto\pictures\Screenshot 2024-03-01 214045.png" alt="Hexapod">
         <div class="text-container">
             <h2>Hex-bot</h2>
             <p>The hexapod design is a marvel of robotics, featuring six articulated legs that mimic the versatility of natural arthropods. Each leg is equipped with multiple joints for precise movement and adaptability to diverse terrains. The hexapod's symmetrical body ensures stability and efficient weight distribution, enabling agile navigation. With sensors for environmental awareness and a centralized control system, the hexapod exhibits remarkable coordination and responsiveness. This design embodies the future of robotic mobility, showcasing the potential for hexapods in exploration and various applications (External - Internal)</p>
@@ -130,11 +147,11 @@
                  Here is the link for the model to look in -  
                <a href=https://a360.co/3sYn5dS target="_blank"> 3D view </a>.
             </div>
-            <img src="pictures\Screenshot 2024-02-29 210115.png" alt="AARM'S COOKING">
+            <img src="D:\porto\pictures\Screenshot 2024-02-29 210115.png" alt="AARM'S COOKING">
         </div>
 
         <div class="image-container">
-            <img src="pictures\Screenshot 2024-03-01 132041.png" alt="Afforestation bot">
+            <img src="D:\porto\pictures\Screenshot 2024-03-01 132041.png" alt="Afforestation bot">
             <div class="text-container">
                 <h2>Afforestation Bot</h2>
                 <p>The AfforestationBot, a cutting-edge robotic solution, autonomously digs and plants trees with precision. Using AI algorithms, it analyzes soil conditions, ensuring optimal tree species selection. Operating on renewable energy, it navigates diverse terrains, adapting to obstacles seamlessly. This innovative technology addresses deforestation, promoting ecological restoration for a greener planet. The AfforestationBot represents a crucial step towards sustainable environmental conservation. (External - Internal)</p>
@@ -150,11 +167,11 @@
                 Here is the link for the model to look in -
                 <a href=https://a360.co/4315MX7 target="_blank"> 3D view </a>.
             </div>
-            <img src="pictures\Screenshot 2024-03-01 133021.png" alt="Smart water-level monitoring">
+            <img src="D:\porto\pictures\Screenshot 2024-03-01 133021.png" alt="Smart water-level monitoring">
         </div>
 
         <div class="image-container">
-            <img src="pictures\Screenshot 2024-03-01 172314.png" alt="Cruise Repair">
+            <img src="D:\porto\pictures\Screenshot 2024-03-01 172314.png" alt="Cruise Repair">
             <div class="text-container">
                 <h2>Cruise Repair Bot</h2>
                 <p>
@@ -171,11 +188,11 @@
                 Here is the link for the model to look in -
                 <a href=https://a360.co/3wCwMQQ target="_blank"> 3D view </a>.
             </div>
-            <img src="pictures\Screenshot 2024-03-01 173313.png" alt="Road heater">
+            <img src="D:\porto\pictures\Screenshot 2024-03-01 173313.png" alt="Road heater">
         </div>
 
         <div class="image-container">
-            <img src="pictures\Screenshot 2024-03-01 173851.png" alt="Toilet Converter">
+            <img src="D:\porto\pictures\Screenshot 2024-03-01 173851.png" alt="Toilet Converter">
             <div class="text-container">
                 <h2>Toilet converter</h2>
                 <p>
@@ -193,11 +210,11 @@
                 Here is the link for the model to look in -
                 <a href=https://a360.co/3P2wqta target="_blank"> 3D view </a>
             </div>
-            <img src="pictures\Screenshot 2024-03-01 175731.png" alt="Space Rover">
+            <img src="D:\porto\pictures\Screenshot 2024-03-01 175731.png" alt="Space Rover">
         </div>
 
         <div class="image-container">
-            <img src="pictures\Screenshot 2024-03-01 180610.png" alt="Suicide preventing attachment">
+            <img src="D:\porto\pictures\Screenshot 2024-03-01 180610.png" alt="Suicide preventing attachment">
             <div class="text-container">
                 <h2>SPS</h2>
                 <p>
@@ -215,11 +232,11 @@
                 Here is the link for the model to look in -
                 <a href=https://a360.co/3v3g3Wh target="_blank"> 3D view </a>
             </div>
-            <img src="pictures\Screenshot 2024-03-01 210741.png" alt="Accessories">
+            <img src="D:\porto\pictures\Screenshot 2024-03-01 210741.png" alt="Accessories">
         </div>
 
         <div class="image-container">
-            <img src="pictures\Screenshot 2024-03-03 163851.png" alt="Robotic Arm">
+            <img src="D:\porto\pictures\Screenshot 2024-03-03 163851.png" alt="Suicide preventing attachment">
             <div class="text-container">
                 <h2>ROBOTIC ARM</h2>
                 <p>One of my major projects I have ever done till now is designing of an fully functional Robotic arm with designing from connection of links to creating a new end-effector. fully well planned and well strucutred roboic arm. At its core, a complex network of actuators, sensors, and precision mechanics allows for intricate and coordinated movements. The internal structure comprises multiple joints and linkages, ensuring flexibility and accurate positioning. As the complexity transforms into a visually appealing exterior, sleek materials, and streamlined shapes are often employed. The outer design prioritizes user interface, with intuitive control panels and ergonomic considerations for human interaction. Attention to detail in the finishing touches enhances both functionality and aesthetics, creating a harmonious balance between technological sophistication and visual elegance. The final result is a robotic arm that seamlessly integrates advanced engineering with a polished and inviting exterior.(External and Internal)</p>
